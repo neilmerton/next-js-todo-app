@@ -1,6 +1,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --border-radius: var(--spacing-sm);
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,6 +39,14 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+input,
+button {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--text-secondary);
+  font-family: inherit;
+  font-size: inherit;
 }
 
 @media (prefers-color-scheme: dark) {
